@@ -11,6 +11,7 @@ npm install
 ```go
 npm start
 ```
+Note - You must have mongodb running as a background process on your machine.
 
 ### Demo
 
