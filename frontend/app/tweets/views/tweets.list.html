@@ -1,0 +1,31 @@
+<div class="container-fluid" ng-init="getTweets();">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <h1 class="text-center">Demo</h1>
+            <h4 class="text-center">Please enter some text to begin!</h4>
+            </br>
+            <form role="form">
+                <div class="form-group">
+                    <textarea class="form-control" type="text" placeholder="What's Happening?" ng-model="tweet.text"></textarea>
+                </div>
+                <div class="form-group" ng-show="tweet.showSave">
+                    <button type="button" class="btn btn-primary pull-right" ng-click="saveTweet()" ng-disabled="tweet.text === ''">Tweet</button>
+                </div>
+                <div class="form-group" ng-show="!tweet.showSave">
+                    <button type="button" class="btn btn-danger pull-right" ng-click="cancel()">Cancel</button>
+                    <button type="button" class="btn btn-primary pull-right" ng-click="updateTweet()" style="margin-right: 10px" ng-disabled="tweet.text === ''">Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <div class="row" ng-repeat="tweet in tweetList">
+        <div class="col-sm-6 col-sm-offset-3 well well-sm">
+            <span>{{tweet.tweet}}</span>
+            <div class="pull-right">
+                <a href="javascript:void(0)" title="Edit"><span class="glyphicon glyphicon-edit" ng-click="editTweet(tweet, $index)"></span></a>
+                <a href="javascript:void(0)" title="Delete"><span class="glyphicon glyphicon-trash" ng-click="deleteTweet(tweet, $index)"></span></a>
+            </div>
+        </div>
+    </div>
+</div>

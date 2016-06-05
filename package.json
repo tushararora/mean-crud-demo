@@ -1,0 +1,27 @@
+{
+    "name": "mean-crud-demo",
+    "version": "0.0.1",
+    "description": "MEAN application for cruding tweets",
+    "main": "server.js",
+    "scripts": {
+        "start": "node ./backend/server",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "twitter",
+        "api",
+        "crud",
+        "nodejs",
+        "expressjs"
+    ],
+    "author": "Tushar Arora",
+    "license": "MIT",
+    "dependencies": {
+        "body-parser": "^1.15.1",
+        "colors": "^1.1.2",
+        "express": "^4.13.4",
+        "lodash": "^4.13.1",
+        "mongoose": "^4.4.19",
+        "request": "^2.72.0"
+    }
+}
