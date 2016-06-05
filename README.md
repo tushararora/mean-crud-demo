@@ -1,5 +1,9 @@
 # mean-crud-demo
 
+### Prerequisites:
+- NodeJS ([nodejs.org](http://nodejs.org/))
+- MongoDB ([mongodb.org](http://www.mongodb.org/))
+
 ### Installation
 
 ```go
